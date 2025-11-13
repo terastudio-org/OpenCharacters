@@ -31,6 +31,38 @@ A modern, feature-rich alternative to Character.AI with support for multiple AI 
 - **Temperature Control**: Fine-tune response randomness from 0.0 to 2.0
 - **Token Management**: Control response length with custom token limits
 
+### 📊 **Advanced Analytics Dashboard**
+- **Real-time Statistics**: Track conversations, messages, and character usage
+- **Performance Metrics**: Monitor API response times and success rates
+- **Usage Analytics**: Detailed breakdown of AI service usage
+- **Visual Charts**: Interactive charts and graphs for data visualization
+- **Character Insights**: Most used characters and engagement scores
+- **Session Tracking**: Monitor conversation session lengths and patterns
+
+### 🔌 **Plugin System for Extensions**
+- **Plugin Management**: Install, enable, and manage third-party plugins
+- **Built-in Plugins**: Character templates, export manager, analytics plus
+- **Plugin Marketplace**: Browse and install community-created plugins
+- **Plugin Development API**: Create custom plugins with JavaScript API
+- **Plugin Categories**: Organized by utility, analytics, character, etc.
+- **Version Management**: Track plugin versions and updates
+
+### 👥 **Team Collaboration Features**
+- **Team Management**: Invite team members and manage permissions
+- **Shared Character Library**: Collaborate on character creation
+- **Real-time Collaboration**: Edit characters with team members
+- **Permission Controls**: Admin, edit, and read-only permissions
+- **Team Settings**: Configure collaboration preferences
+- **Member Status**: Online/offline status tracking
+
+### 📈 **API Rate Limiting & Usage Tracking**
+- **Real-time Monitoring**: Track API usage across all services
+- **Rate Limit Alerts**: Automatic warnings at 75% and 90% usage
+- **Cost Tracking**: Monitor spending across different AI services
+- **Usage Analytics**: Daily, weekly, and monthly usage reports
+- **Service Distribution**: See which services you use most
+- **Usage History**: Historical data for usage pattern analysis
+
 ### 💾 **Privacy & Security**
 - **Local Storage**: All character data and conversations stored locally in your browser
 - **No Server Required**: Runs entirely in the browser - no data sent to external servers
@@ -97,7 +129,14 @@ npx serve .
 
 ## 📚 Usage Guide
 
-### Character Creation Process
+### **Quick Start Guide**
+1. **Choose AI Service**: Select from Groq, OpenAI, Anthropic, or Hugging Face
+2. **Get API Key**: Obtain and enter your preferred service API key
+3. **Test Connection**: Verify connectivity with the test button
+4. **Select/Create Character**: Choose from pre-built characters or create your own
+5. **Start Chatting**: Begin conversations with real-time streaming responses
+
+### **Character Creation Process**
 
 1. **Basic Information**
    - **Name**: Your character's name
@@ -115,7 +154,33 @@ npx serve .
    - **Response Length**: Control token usage
    - **System Prompt**: Advanced AI instructions
 
-### Character Prompt Best Practices
+### **Advanced Features Usage**
+
+#### **Analytics Dashboard**
+- Click "Analytics" in the sidebar to view comprehensive usage statistics
+- Monitor conversation counts, message volumes, and character engagement
+- Track API usage patterns and performance metrics
+- View most-used characters and session analytics
+
+#### **Plugin System**
+- Access "Plugins" from the sidebar to manage extensions
+- Install plugins from the marketplace for enhanced functionality
+- Built-in plugins include character templates and export manager
+- Create custom plugins using the provided development API
+
+#### **Team Collaboration**
+- Use "Team" feature to collaborate on character creation
+- Invite team members and share character libraries
+- Manage permissions for different access levels
+- Real-time collaboration on character development
+
+#### **API Rate Limiting & Usage Tracking**
+- Monitor real-time API usage across all services
+- Receive automatic alerts at 75% and 90% usage thresholds
+- Track costs and usage patterns for budget management
+- View detailed usage analytics and historical data
+
+### **Character Prompt Best Practices**
 
 **Example Character Prompt:**
 ```
@@ -264,18 +329,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📈 Roadmap
 
 ### **Planned Features**
-- [ ] Voice input/output integration
-- [ ] Image generation for characters
 - [ ] Multi-language support
-- [ ] Advanced analytics dashboard
-- [ ] Plugin system for extensions
-- [ ] Team collaboration features
-- [ ] API rate limiting and usage tracking
+- [ ] Advanced video chat integration
+- [ ] Advanced character marketplace
 
 ### **Version History**
 - **v1.0.0**: Initial release with multi-service support
-- **v1.1.0**: [Planned] Voice integration and image support
-- **v1.2.0**: [Planned] Team features and analytics
+- **v1.1.0**: Enhanced with analytics, plugins, team collaboration, and usage tracking
+- **v1.2.0**: [Planned] Multi-language support and video chat integration
 
 ---
 

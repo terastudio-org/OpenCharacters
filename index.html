@@ -502,6 +502,355 @@
             color: #721c24;
         }
 
+        /* Advanced Features Styles */
+        
+        .advanced-section {
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .advanced-section h3 {
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .analytics-dashboard {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .chart-container {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .chart-placeholder {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e1e5e9;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .usage-alert {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 8px 0;
+            font-size: 12px;
+        }
+
+        .usage-alert.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .usage-alert.critical {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .usage-alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .plugin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .plugin-card {
+            background: white;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .plugin-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .plugin-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .plugin-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .plugin-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .plugin-tag {
+            background: #f0f2ff;
+            color: #667eea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .plugin-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .plugin-status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .plugin-status-indicator.active {
+            background: #4CAF50;
+        }
+
+        .plugin-status-indicator.inactive {
+            background: #ccc;
+        }
+
+        .team-members {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        .member-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+
+        .member-info {
+            flex: 1;
+        }
+
+        .member-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .member-role {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .member-status {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+
+        .member-status.admin {
+            background: #ffeaa7;
+            color: #856404;
+        }
+
+        .member-status.member {
+            background: #f0f2ff;
+            color: #667eea;
+        }
+
+        .tab-advanced {
+            padding: 12px 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: #666;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-advanced.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .advanced-modal {
+            max-width: 900px;
+            max-height: 90vh;
+        }
+
+        .modal-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background: #f0f2ff;
+            border: none;
+            border-radius: 6px;
+            color: #667eea;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn:hover:not(.active) {
+            background: #e1e5f9;
+        }
+
+        .rate-limit-display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .rate-limit-card {
+            background: white;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .rate-limit-service {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .rate-limit-usage {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        .mini-chart {
+            width: 100%;
+            height: 40px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mini-chart-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .export-format-selector {
+            display: flex;
+            gap: 8px;
+            margin: 16px 0;
+        }
+
+        .format-btn {
+            padding: 8px 16px;
+            border: 2px solid #e1e5e9;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .format-btn.active {
+            border-color: #667eea;
+            background: #f0f2ff;
+            color: #667eea;
+        }
+
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
@@ -516,6 +865,23 @@
             .main-chat {
                 margin: 10px;
                 margin-top: 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .plugin-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .advanced-modal {
+                margin: 20px;
+                max-width: none;
+            }
+
+            .rate-limit-display {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -551,8 +917,12 @@
             <!-- Characters will be populated here -->
         </div>
         
-        <div style="padding: 20px; border-top: 1px solid rgba(255, 255, 255, 0.2);">
-            <button class="btn btn-primary" onclick="openCharacterModal()">New Character</button>
+        <div class="advanced-section">
+            <h3>Quick Actions</h3>
+            <button class="btn btn-primary" style="width: 100%; margin-bottom: 8px;" onclick="openCharacterModal()">New Character</button>
+            <button class="btn btn-secondary" style="width: 100%; margin-bottom: 8px;" onclick="openAnalytics()">Analytics</button>
+            <button class="btn btn-secondary" style="width: 100%; margin-bottom: 8px;" onclick="openPluginManager()">Plugins</button>
+            <button class="btn btn-secondary" style="width: 100%;" onclick="openTeamManager()">Team</button>
         </div>
     </div>
 
@@ -1313,12 +1683,717 @@
             link.click();
         }
 
+        // Advanced Features Modals
+        function openAdvancedModal(modalId) {
+            document.querySelectorAll('.advanced-modal').forEach(modal => {
+                modal.style.display = 'none';
+            });
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function openAnalytics() {
+            const modal = document.createElement('div');
+            modal.className = 'modal advanced-modal';
+            modal.id = 'analytics-modal';
+            modal.innerHTML = `
+                <div class="modal-content advanced-modal">
+                    <div class="modal-header">
+                        <h3>Analytics Dashboard</h3>
+                        <button class="close-btn" onclick="closeAdvancedModal('analytics-modal')">&times;</button>
+                    </div>
+                    <div class="modal-nav">
+                        <button class="nav-btn active" onclick="showAnalyticsTab('overview')">Overview</button>
+                        <button class="nav-btn" onclick="showAnalyticsTab('usage')">Usage</button>
+                        <button class="nav-btn" onclick="showAnalyticsTab('performance')">Performance</button>
+                        <button class="nav-btn" onclick="showAnalyticsTab('characters')">Characters</button>
+                    </div>
+                    <div class="analytics-dashboard">
+                        <div id="analytics-overview" class="analytics-tab">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number" id="total-conversations">${getUsageStats().totalConversations}</div>
+                                    <div class="stat-label">Total Conversations</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" id="total-messages">${getUsageStats().totalMessages}</div>
+                                    <div class="stat-label">Messages Sent</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" id="active-characters">${characters.length}</div>
+                                    <div class="stat-label">Active Characters</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" id="total-characters">${characters.length}</div>
+                                    <div class="stat-label">Total Characters</div>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart-placeholder">
+                                    <h4>Usage Trends</h4>
+                                    <p>Conversation activity over time</p>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart-placeholder">
+                                    <h4>AI Service Usage</h4>
+                                    <p>Distribution of API calls by service</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analytics-usage" class="analytics-tab" style="display: none;">
+                            <h4>API Usage Tracking</h4>
+                            ${getRateLimitInfo()}
+                            <div class="usage-alerts" id="usage-alerts">
+                                ${getUsageAlerts()}
+                            </div>
+                        </div>
+                        <div id="analytics-performance" class="analytics-tab" style="display: none;">
+                            <h4>Performance Metrics</h4>
+                            <div class="chart-container">
+                                <div class="chart-placeholder">
+                                    <h4>Response Times</h4>
+                                    <p>Average response time by AI service</p>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart-placeholder">
+                                    <h4>Success Rate</h4>
+                                    <p>API success rate over time</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analytics-characters" class="analytics-tab" style="display: none;">
+                            <h4>Character Analytics</h4>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number">${getMostUsedCharacter()}</div>
+                                    <div class="stat-label">Most Used Character</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">${getAverageSessionLength()}</div>
+                                    <div class="stat-label">Avg Session Length</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">${getCharacterEngagement()}</div>
+                                    <div class="stat-label">Avg Engagement Score</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">${getCreationDate()}</div>
+                                    <div class="stat-label">Days Active</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.style.display = 'block';
+        }
+
+        function openPluginManager() {
+            const modal = document.createElement('div');
+            modal.className = 'modal advanced-modal';
+            modal.id = 'plugin-modal';
+            modal.innerHTML = `
+                <div class="modal-content advanced-modal">
+                    <div class="modal-header">
+                        <h3>Plugin Manager</h3>
+                        <button class="close-btn" onclick="closeAdvancedModal('plugin-modal')">&times;</button>
+                    </div>
+                    <div class="modal-nav">
+                        <button class="nav-btn active" onclick="showPluginTab('installed')">Installed</button>
+                        <button class="nav-btn" onclick="showPluginTab('marketplace')">Marketplace</button>
+                        <button class="nav-btn" onclick="showPluginTab('development')">Development</button>
+                    </div>
+                    <div class="plugin-content">
+                        <div id="plugin-installed" class="plugin-tab">
+                            <h4>Installed Plugins</h4>
+                            <div class="plugin-grid" id="installed-plugins">
+                                ${getInstalledPlugins()}
+                            </div>
+                        </div>
+                        <div id="plugin-marketplace" class="plugin-tab" style="display: none;">
+                            <h4>Plugin Marketplace</h4>
+                            <div class="plugin-grid" id="marketplace-plugins">
+                                ${getMarketplacePlugins()}
+                            </div>
+                        </div>
+                        <div id="plugin-development" class="plugin-tab" style="display: none;">
+                            <h4>Plugin Development</h4>
+                            <p>Create custom plugins for OpenCharacters</p>
+                            <button class="btn btn-primary" onclick="createNewPlugin()">Create Plugin</button>
+                            <div style="margin-top: 20px;">
+                                <h5>Plugin API Reference</h5>
+                                <pre style="background: #f8f9fa; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 12px;">
+// Plugin Structure
+const myPlugin = {
+    name: "My Plugin",
+    version: "1.0.0",
+    author: "Your Name",
+    description: "Plugin description",
+    initialize: function(app) {
+        // Initialize plugin
+    },
+    destroy: function() {
+        // Cleanup when plugin is disabled
+    },
+    hooks: {
+        onMessage: function(message) {
+            // Called when message is sent
+        }
+    }
+};
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.style.display = 'block';
+        }
+
+        function openTeamManager() {
+            const modal = document.createElement('div');
+            modal.className = 'modal advanced-modal';
+            modal.id = 'team-modal';
+            modal.innerHTML = `
+                <div class="modal-content advanced-modal">
+                    <div class="modal-header">
+                        <h3>Team Management</h3>
+                        <button class="close-btn" onclick="closeAdvancedModal('team-modal')">&times;</button>
+                    </div>
+                    <div class="modal-nav">
+                        <button class="nav-btn active" onclick="showTeamTab('members')">Members</button>
+                        <button class="nav-btn" onclick="showTeamTab('shared')">Shared Library</button>
+                        <button class="nav-btn" onclick="showTeamTab('settings')">Settings</button>
+                    </div>
+                    <div class="team-content">
+                        <div id="team-members" class="team-tab">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                <h4>Team Members</h4>
+                                <button class="btn btn-primary" onclick="inviteMember()">Invite Member</button>
+                            </div>
+                            <div class="team-members" id="team-members-list">
+                                ${getTeamMembers()}
+                            </div>
+                        </div>
+                        <div id="team-shared" class="team-tab" style="display: none;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                <h4>Shared Character Library</h4>
+                                <button class="btn btn-primary" onclick="shareCharacter()">Share Character</button>
+                            </div>
+                            <div class="characters-list" id="shared-characters">
+                                ${getSharedCharacters()}
+                            </div>
+                        </div>
+                        <div id="team-settings" class="team-tab" style="display: none;">
+                            <h4>Team Settings</h4>
+                            <div class="form-group">
+                                <label>Team Name:</label>
+                                <input type="text" id="team-name" placeholder="Your Team Name" value="OpenCharacters Team">
+                            </div>
+                            <div class="form-group">
+                                <label>Default Permissions:</label>
+                                <select id="default-permissions">
+                                    <option value="read">Read Only</option>
+                                    <option value="edit">Can Edit</option>
+                                    <option value="admin">Administrator</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Collaboration Features:</label>
+                                <div style="display: flex; flex-direction: column; gap: 8px;">
+                                    <label><input type="checkbox" checked> Real-time editing</label>
+                                    <label><input type="checkbox" checked> Character sharing</label>
+                                    <label><input type="checkbox" checked> Usage analytics</label>
+                                    <label><input type="checkbox"> Voice calls</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" onclick="saveTeamSettings()">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.style.display = 'block';
+        }
+
+        function closeAdvancedModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                setTimeout(() => modal.remove(), 300);
+            }
+        }
+
+        function showAnalyticsTab(tab) {
+            document.querySelectorAll('.analytics-tab').forEach(t => t.style.display = 'none');
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`analytics-${tab}`).style.display = 'block';
+            event.target.classList.add('active');
+        }
+
+        function showPluginTab(tab) {
+            document.querySelectorAll('.plugin-tab').forEach(t => t.style.display = 'none');
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`plugin-${tab}`).style.display = 'block';
+            event.target.classList.add('active');
+        }
+
+        function showTeamTab(tab) {
+            document.querySelectorAll('.team-tab').forEach(t => t.style.display = 'none');
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`team-${tab}`).style.display = 'block';
+            event.target.classList.add('active');
+        }
+
+        // Analytics and Usage Tracking Functions
+        function getUsageStats() {
+            const stats = JSON.parse(localStorage.getItem('opencharacters-stats') || '{}');
+            return {
+                totalConversations: stats.totalConversations || 0,
+                totalMessages: stats.totalMessages || 0,
+                totalCharacters: characters.length
+            };
+        }
+
+        function getRateLimitInfo() {
+            const rateLimits = JSON.parse(localStorage.getItem('opencharacters-rate-limits') || '{}');
+            const services = ['groq', 'openai', 'anthropic'];
+            
+            return services.map(service => {
+                const serviceName = AI_SERVICES[service].name;
+                const usage = rateLimits[service] || { used: 0, limit: 1000 };
+                const percentage = Math.round((usage.used / usage.limit) * 100);
+                
+                return `
+                    <div class="rate-limit-card">
+                        <div class="rate-limit-service">${serviceName}</div>
+                        <div class="rate-limit-usage">${usage.used} / ${usage.limit} requests</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${Math.min(percentage, 100)}%"></div>
+                        </div>
+                        <div class="mini-chart">
+                            <div class="mini-chart-fill" style="width: ${Math.min(percentage, 100)}%"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function getUsageAlerts() {
+            const alerts = JSON.parse(localStorage.getItem('opencharacters-alerts') || '[]');
+            if (alerts.length === 0) {
+                return '<div class="usage-alert success">No usage alerts at this time.</div>';
+            }
+            return alerts.map(alert => `
+                <div class="usage-alert ${alert.type}">
+                    ${alert.message}
+                </div>
+            `).join('');
+        }
+
+        function getMostUsedCharacter() {
+            const characterUsage = JSON.parse(localStorage.getItem('opencharacters-character-usage') || '{}');
+            const sorted = Object.entries(characterUsage).sort(([,a], [,b]) => b - a);
+            return sorted[0] ? characters.find(c => c.id == sorted[0][0])?.name || 'None' : 'None';
+        }
+
+        function getAverageSessionLength() {
+            const sessions = JSON.parse(localStorage.getItem('opencharacters-sessions') || '[]');
+            if (sessions.length === 0) return '0';
+            const total = sessions.reduce((sum, session) => sum + (session.duration || 0), 0);
+            return Math.round(total / sessions.length);
+        }
+
+        function getCharacterEngagement() {
+            return '8.5'; // Mock engagement score
+        }
+
+        function getCreationDate() {
+            const created = localStorage.getItem('opencharacters-created');
+            if (!created) return '0';
+            const days = Math.floor((Date.now() - parseInt(created)) / (1000 * 60 * 60 * 24));
+            return days;
+        }
+
+        // Plugin System Functions
+        function getInstalledPlugins() {
+            const plugins = JSON.parse(localStorage.getItem('opencharacters-plugins') || '[]');
+            
+            if (plugins.length === 0) {
+                // Default plugins
+                const defaultPlugins = [
+                    {
+                        name: 'Character Templates',
+                        description: 'Pre-built character templates for quick creation',
+                        tags: ['utility', 'character'],
+                        status: 'active',
+                        version: '1.0.0'
+                    },
+                    {
+                        name: 'Export Manager',
+                        description: 'Enhanced export options for characters and conversations',
+                        tags: ['utility', 'export'],
+                        status: 'active',
+                        version: '1.0.0'
+                    },
+                    {
+                        name: 'Analytics Plus',
+                        description: 'Advanced analytics and reporting features',
+                        tags: ['analytics', 'dashboard'],
+                        status: 'inactive',
+                        version: '1.0.0'
+                    }
+                ];
+                localStorage.setItem('opencharacters-plugins', JSON.stringify(defaultPlugins));
+                return getInstalledPlugins();
+            }
+            
+            return plugins.map(plugin => `
+                <div class="plugin-card">
+                    <div class="plugin-title">${plugin.name}</div>
+                    <div class="plugin-description">${plugin.description}</div>
+                    <div class="plugin-tags">
+                        ${plugin.tags.map(tag => `<span class="plugin-tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="plugin-status">
+                        <div style="display: flex; align-items: center;">
+                            <div class="plugin-status-indicator ${plugin.status}"></div>
+                            <span style="font-size: 12px; color: #666;">${plugin.status}</span>
+                        </div>
+                        <span style="font-size: 11px; color: #999;">v${plugin.version}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getMarketplacePlugins() {
+            const marketplacePlugins = [
+                {
+                    name: 'Voice Chat',
+                    description: 'Add voice input and output to your conversations',
+                    tags: ['voice', 'communication'],
+                    status: 'active',
+                    version: '1.2.0'
+                },
+                {
+                    name: 'Image Generator',
+                    description: 'Generate character avatars and images using AI',
+                    tags: ['image', 'ai', 'generation'],
+                    status: 'active',
+                    version: '1.1.0'
+                },
+                {
+                    name: 'Language Translator',
+                    description: 'Translate conversations in real-time',
+                    tags: ['translation', 'language'],
+                    status: 'inactive',
+                    version: '1.0.0'
+                },
+                {
+                    name: 'Custom Themes',
+                    description: 'Beautiful themes and UI customization',
+                    tags: ['theme', 'ui', 'customization'],
+                    status: 'active',
+                    version: '2.0.0'
+                },
+                {
+                    name: 'Export Formats',
+                    description: 'Additional export formats (PDF, DOCX, TXT)',
+                    tags: ['export', 'format'],
+                    status: 'inactive',
+                    version: '1.0.0'
+                },
+                {
+                    name: 'API Monitor',
+                    description: 'Monitor API usage and costs across services',
+                    tags: ['analytics', 'monitoring'],
+                    status: 'active',
+                    version: '1.3.0'
+                }
+            ];
+            
+            return marketplacePlugins.map(plugin => `
+                <div class="plugin-card">
+                    <div class="plugin-title">${plugin.name}</div>
+                    <div class="plugin-description">${plugin.description}</div>
+                    <div class="plugin-tags">
+                        ${plugin.tags.map(tag => `<span class="plugin-tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="plugin-status">
+                        <div style="display: flex; align-items: center;">
+                            <div class="plugin-status-indicator ${plugin.status}"></div>
+                            <span style="font-size: 12px; color: #666;">${plugin.status}</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <span style="font-size: 11px; color: #999;">v${plugin.version}</span>
+                            <button class="btn btn-primary" style="padding: 4px 8px; font-size: 11px;">Install</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function createNewPlugin() {
+            alert('Plugin creation feature coming soon! This will open a development environment for creating custom plugins.');
+        }
+
+        // Team Collaboration Functions
+        function getTeamMembers() {
+            const members = JSON.parse(localStorage.getItem('opencharacters-team-members') || '[]');
+            
+            if (members.length === 0) {
+                // Default team member
+                const defaultMembers = [
+                    {
+                        name: 'You',
+                        role: 'admin',
+                        status: 'online',
+                        avatar: 'YU'
+                    }
+                ];
+                localStorage.setItem('opencharacters-team-members', JSON.stringify(defaultMembers));
+                return getTeamMembers();
+            }
+            
+            return members.map(member => `
+                <div class="team-member">
+                    <div class="member-avatar">${member.avatar}</div>
+                    <div class="member-info">
+                        <div class="member-name">${member.name}</div>
+                        <div class="member-role">${member.status}</div>
+                    </div>
+                    <span class="member-status ${member.role}">${member.role}</span>
+                </div>
+            `).join('');
+        }
+
+        function getSharedCharacters() {
+            if (characters.length === 0) {
+                return '<div style="text-align: center; color: #666; padding: 20px;">No shared characters available</div>';
+            }
+            
+            return characters.map(character => `
+                <div class="character-item">
+                    <div class="character-name">${character.name} (Shared)</div>
+                    <div class="character-description">${character.description || 'No description'}</div>
+                    <div style="margin-top: 8px; display: flex; gap: 8px;">
+                        <button class="btn btn-primary" style="font-size: 12px; padding: 4px 8px;">Import</button>
+                        <button class="btn btn-secondary" style="font-size: 12px; padding: 4px 8px;">View</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function inviteMember() {
+            const email = prompt('Enter email address to invite:');
+            if (email) {
+                alert(`Invitation sent to ${email}! (Demo feature)`);
+            }
+        }
+
+        function shareCharacter() {
+            if (!currentCharacter) {
+                alert('Please select a character first.');
+                return;
+            }
+            const memberEmail = prompt('Enter team member email to share this character with:');
+            if (memberEmail) {
+                alert(`Character "${currentCharacter.name}" shared with ${memberEmail}! (Demo feature)`);
+            }
+        }
+
+        function saveTeamSettings() {
+            const teamName = document.getElementById('team-name').value;
+            const defaultPermissions = document.getElementById('default-permissions').value;
+            
+            const settings = {
+                teamName,
+                defaultPermissions,
+                updatedAt: Date.now()
+            };
+            
+            localStorage.setItem('opencharacters-team-settings', JSON.stringify(settings));
+            alert('Team settings saved successfully!');
+        }
+
+        // Enhanced API Usage Tracking
+        function trackAPIUsage(service, tokens, cost) {
+            const usage = JSON.parse(localStorage.getItem('opencharacters-api-usage') || '{}');
+            const today = new Date().toISOString().split('T')[0];
+            
+            if (!usage[service]) {
+                usage[service] = {};
+            }
+            if (!usage[service][today]) {
+                usage[service][today] = { tokens: 0, cost: 0, calls: 0 };
+            }
+            
+            usage[service][today].tokens += tokens;
+            usage[service][today].cost += cost;
+            usage[service][today].calls += 1;
+            
+            localStorage.setItem('opencharacters-api-usage', JSON.stringify(usage));
+            
+            // Update rate limits
+            updateRateLimits(service, tokens);
+        }
+
+        function updateRateLimits(service, tokens) {
+            const rateLimits = JSON.parse(localStorage.getItem('opencharacters-rate-limits') || '{}');
+            const serviceLimits = rateLimits[service] || { used: 0, limit: 1000 };
+            
+            serviceLimits.used += 1;
+            rateLimits[service] = serviceLimits;
+            
+            localStorage.setItem('opencharacters-rate-limits', JSON.stringify(rateLimits));
+            
+            // Check for alerts
+            checkUsageAlerts(service, serviceLimits);
+        }
+
+        function checkUsageAlerts(service, limits) {
+            const alerts = JSON.parse(localStorage.getItem('opencharacters-alerts') || []);
+            const percentage = (limits.used / limits.limit) * 100;
+            
+            let alert = null;
+            if (percentage >= 90) {
+                alert = { type: 'critical', message: `Critical: ${AI_SERVICES[service].name} is at ${percentage}% of daily limit` };
+            } else if (percentage >= 75) {
+                alert = { type: 'warning', message: `Warning: ${AI_SERVICES[service].name} is at ${percentage}% of daily limit` };
+            }
+            
+            if (alert && !alerts.some(a => a.message.includes(service))) {
+                alerts.push(alert);
+                localStorage.setItem('opencharacters-alerts', JSON.stringify(alerts));
+            }
+        }
+
+        // Enhanced conversation tracking
+        function startSession() {
+            const session = {
+                startTime: Date.now(),
+                characterId: currentCharacter?.id,
+                service: document.getElementById('service-select').value
+            };
+            localStorage.setItem('opencharacters-current-session', JSON.stringify(session));
+        }
+
+        function endSession() {
+            const session = JSON.parse(localStorage.getItem('opencharacters-current-session') || '{}');
+            if (session.startTime) {
+                const duration = Math.floor((Date.now() - session.startTime) / 1000);
+                const sessions = JSON.parse(localStorage.getItem('opencharacters-sessions') || '[]');
+                sessions.push({ ...session, duration });
+                localStorage.setItem('opencharacters-sessions', JSON.stringify(sessions));
+            }
+            localStorage.removeItem('opencharacters-current-session');
+        }
+
+        function trackConversation() {
+            const stats = getUsageStats();
+            stats.totalConversations += 1;
+            localStorage.setItem('opencharacters-stats', JSON.stringify(stats));
+        }
+
+        function trackMessage() {
+            const stats = getUsageStats();
+            stats.totalMessages += 1;
+            localStorage.setItem('opencharacters-stats', JSON.stringify(stats));
+        }
+
+        function trackCharacterUsage(characterId) {
+            const usage = JSON.parse(localStorage.getItem('opencharacters-character-usage') || '{}');
+            usage[characterId] = (usage[characterId] || 0) + 1;
+            localStorage.setItem('opencharacters-character-usage', JSON.stringify(usage));
+        }
+
+        // Enhanced callAI function with tracking
+        const originalCallAI = callAI;
+        callAI = async function(character, history) {
+            const service = document.getElementById('service-select').value;
+            const startTime = Date.now();
+            
+            try {
+                const response = await originalCallAI(character, history);
+                const endTime = Date.now();
+                const duration = endTime - startTime;
+                
+                // Track successful API call
+                trackAPIUsage(service, response.length, calculateCost(service, response.length));
+                
+                return response;
+            } catch (error) {
+                // Track failed API call
+                trackAPIUsage(service, 0, 0);
+                throw error;
+            }
+        };
+
+        function calculateCost(service, tokens) {
+            // Mock cost calculation
+            const costs = {
+                'groq': 0.0001,
+                'openai': 0.0002,
+                'anthropic': 0.00015
+            };
+            return (tokens / 1000) * (costs[service] || 0.0001);
+        }
+
+        // Initialize analytics on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set creation date if not exists
+            if (!localStorage.getItem('opencharacters-created')) {
+                localStorage.setItem('opencharacters-created', Date.now().toString());
+            }
+            
+            // Start initial session
+            startSession();
+            
+            // Track initial stats
+            trackConversation();
+        });
+
+        // End session before page unload
+        window.addEventListener('beforeunload', function() {
+            endSession();
+        });
+
+        // Enhanced character selection with tracking
+        const originalSelectCharacter = selectCharacter;
+        selectCharacter = function(index) {
+            originalSelectCharacter(index);
+            if (currentCharacter) {
+                trackCharacterUsage(currentCharacter.id);
+            }
+        };
+
+        // Enhanced message sending with tracking
+        const originalSendMessage = sendMessage;
+        sendMessage = async function() {
+            await originalSendMessage();
+            trackMessage();
+            endSession();
+            startSession();
+        };
+
         // Close modal when clicking outside
         window.onclick = function(event) {
             const modal = document.getElementById('character-modal');
             if (event.target === modal) {
                 closeCharacterModal();
             }
+            
+            // Handle advanced modals
+            const advancedModals = ['analytics-modal', 'plugin-modal', 'team-modal'];
+            advancedModals.forEach(modalId => {
+                const modal = document.getElementById(modalId);
+                if (event.target === modal) {
+                    closeAdvancedModal(modalId);
+                }
+            });
         }
     </script>
 </body>
